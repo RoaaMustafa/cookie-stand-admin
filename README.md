@@ -9,7 +9,7 @@ continue work on Cookie Stand Admin app using Next.js and style using Tailwind C
 
 `<main>` have custom `<CreateForm>` and `<ReportTable>` components.
 
-### PR: 
+### PR: https://github.com/RoaaMustafa/cookie-stand-admin/pull/1
 
 ## How to use:
 
