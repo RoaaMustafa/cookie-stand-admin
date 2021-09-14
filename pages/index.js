@@ -1,26 +1,31 @@
-
-import React, { useState } from 'react'
 import Head from 'next/head'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
+import React, { useState } from 'react'
 import Main from '../components/Main'
+import Link from 'next/link'
+
+
 export default function Home() {
   return (
-    <div className="">
+    <div>
+
       <Head>
         <title>Cookie Stand Admin</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-      <Header title={'Cookie Stand Admin'}>
-        {/* <h1> Cookie Stand Admin </h1> */}
-      </Header>
-      <Main>
 
-      </Main>
-     
-      
-      <Footer></Footer>
+
+      <Header title={'Cookie Stand Admin'}>
+        <Link href="Overview" >
+          <a>Overview</a>
+        </Link>
+      </Header>
+
+      <Main />
+
+
+
+
     </div>
   )
 }
