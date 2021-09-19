@@ -19,7 +19,7 @@ export default function Home() {
       
       
       <Header title={'Cookie Stand Admin'}>
-        <Link href="Overviews" >
+        <Link href="Overview" >
           <a>Overview</a>
         </Link>
       </Header>
