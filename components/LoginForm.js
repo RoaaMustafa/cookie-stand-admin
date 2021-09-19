@@ -3,17 +3,18 @@ import { useAuth } from '../contexts/auth'
 import React,{ useState } from "react";
 
 
-export default function LoginForm() {
+export default function LoginForm(props) {
     const { login } = useAuth();
-    const [username ,setUsername] =useState({
-        
-    })
+
     const handlelogin = ((e)=>{
         e.preventDefault();
-        console.log(e.target.username.value);
+        // console.log(e.target.username.value);
         const user = e.target.username.value
         const password = e.target.password.value
-        login(user,password)
+        console.log(user);
+        console.log(password);
+
+       props.login(user,password)
 
     })
     
@@ -22,13 +23,13 @@ export default function LoginForm() {
         <div className="w-2/3 h-56 mx-auto my-10 bg-green-300 rounded-lg   "> 
             <form onSubmit={handlelogin}>
                 <div className="flex items-center justify-center flex-col">
-                    <label htmlFor="username" >User name</label>
+                    <label for="username" >User name</label>
                     <br />
                     <input type="text" name="username" id="username" className="flex-grow w-10/12 rounded-sm bg-gray-200"/>
                 </div>
 
                 <div className="flex items-center justify-center flex-col">
-                    <label htmlFor="password" >Password</label>
+                    <label for="password" >Password</label>
                     <br />
                     <input type="password" name="password" id="password" className="flex-grow w-10/12 mt-2 rounded-sm bg-gray-200"/>
                 </div>

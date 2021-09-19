@@ -24,7 +24,11 @@ export default function Home() {
         </Link>
       </Header>
       {user ? 
+        <>
         <Main />
+        <button onClick={logout} className="p-2 text-white bg-gray-500 rounded">Logout</button>
+        </>
+
         :
         <LoginForm  login={login}/>
       }
