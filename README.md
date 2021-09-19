@@ -11,6 +11,15 @@ continue work on Cookie Stand Admin app using Next.js and style using Tailwind C
 
 ### PR: https://github.com/RoaaMustafa/cookie-stand-admin/pull/1
 
-## How to use:
+### How to use:
 
  `npm run dev`
+## Lab39:
+
+ Add Authentication Login Form and delete option and connect the form with cookie stand APi
+
+## Lab 41:
+
+### Deployment URL: https://cookie-stand-admin-8zd8i1khp-roaamustafa.vercel.app/
+
+### PR:
